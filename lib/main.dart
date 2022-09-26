@@ -6,14 +6,14 @@ import 'package:yodoc/routes/routes.dart';
 import 'package:yodoc/screens/disease_page.dart';
 import 'package:yodoc/screens/home_page.dart';
 
-import 'disease/cold.dart';
+import 'disease/cold/cold.dart';
 import 'disease/convulsions.dart';
-import 'disease/fever.dart';
-import 'disease/headache.dart';
+import 'disease/fever/fever.dart';
+import 'disease/headache/headache.dart';
 import 'disease/loosemotion.dart';
 import 'disease/notbreathing.dart';
 import 'disease/stomachache.dart';
-import 'disease/vommit.dart';
+import 'disease/vommit/vommit.dart';
 
 void main() {
   runApp(const MyApp());

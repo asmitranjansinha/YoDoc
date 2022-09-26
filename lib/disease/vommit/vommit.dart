@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../../routes/routes.dart';
-
-class HeadachePage extends StatefulWidget {
-  const HeadachePage({super.key});
+class VommitPage extends StatefulWidget {
+  const VommitPage({super.key});
 
   @override
-  State<HeadachePage> createState() => _HeadachePageState();
+  State<VommitPage> createState() => _VommitPageState();
 }
 
-class _HeadachePageState extends State<HeadachePage> {
+class _VommitPageState extends State<VommitPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,24 +27,28 @@ class _HeadachePageState extends State<HeadachePage> {
                 height: 300,
               ),
               Center(
-                  child: Text(
-                'Are you feeling feverish?',
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Text(
+                'Feeling like vomitting or actually happening?',
                 style: TextStyle(color: Colors.white, fontSize: 25),
-              )),
-              const SizedBox(height: 35,),
+              ),
+                  )),
+              const SizedBox(
+                height: 35,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
-                    onPressed: () {
-                    },
+                    onPressed: () {},
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         padding: const EdgeInsets.symmetric(
                             horizontal: 30, vertical: 13),
                         shape: const StadiumBorder()),
                     child: const Text(
-                      'Y E S',
+                      'Feeling',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black54,
@@ -54,15 +56,14 @@ class _HeadachePageState extends State<HeadachePage> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {
-                    },
+                    onPressed: () {},
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         padding: const EdgeInsets.symmetric(
                             horizontal: 30, vertical: 13),
                         shape: const StadiumBorder()),
                     child: const Text(
-                      'N O',
+                      'Happening',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.black54,

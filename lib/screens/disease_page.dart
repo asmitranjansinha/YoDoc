@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:yodoc/routes/routes.dart';
+
+import '../routes/routes.dart';
 
 class DiseasePage extends StatefulWidget {
   const DiseasePage({super.key});
@@ -11,7 +14,6 @@ class _DiseasePageState extends State<DiseasePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SingleChildScrollView(
         physics: const AlwaysScrollableScrollPhysics(),
         child: Container(
@@ -37,222 +39,240 @@ class _DiseasePageState extends State<DiseasePage> {
                   height: 70,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "HeadAche",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, AppRoutes.headacheRoute);
+                          },
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "HeadAche",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Vommit",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, AppRoutes.vommitRoute);
+                          },
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Vommit",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-              ]),
-              const SizedBox(
-                height: 80,
-              ),
-              Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Cold",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                    ]),
+                const SizedBox(
+                  height: 80,
+                ),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, AppRoutes.coldRoute);
+                          },
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Cold",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Fever",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, AppRoutes.feverRoute);
+                          },
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Fever",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-              ]),
-              const SizedBox(
-                height: 80,
-              ),
-              Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Loose Motion",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                    ]),
+                const SizedBox(
+                  height: 80,
+                ),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Loose Motion",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Stomach Ache",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Stomach Ache",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-              ]),
-              const SizedBox(
-                height: 80,
-              ),
-              Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Acidity",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                    ]),
+                const SizedBox(
+                  height: 80,
+                ),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Acidity",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Convulsions",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Convulsions",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-              ]),
-              const SizedBox(
-                height: 80,
-              ),
-              Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Breathlessness",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                    ]),
+                const SizedBox(
+                  height: 80,
+                ),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Breathlessness",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  Material(
-                    color: Colors.grey[300]?.withOpacity(0.7),
-                    borderRadius: BorderRadius.circular(15),
-                    child: InkWell(
-                      child: Container(
-                        width: 200,
-                        height: 150,
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "Not Breathing",
-                          style: TextStyle(
-                            color: Colors.black54,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                      Material(
+                        color: Colors.grey[300]?.withOpacity(0.7),
+                        borderRadius: BorderRadius.circular(15),
+                        child: InkWell(
+                          child: Container(
+                            width: 200,
+                            height: 150,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              "Not Breathing",
+                              style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-              ]),
+                    ]),
               ],
             ),
           ),
