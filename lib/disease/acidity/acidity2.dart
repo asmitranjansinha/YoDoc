@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class FeverNohead extends StatefulWidget {
-  const FeverNohead({super.key});
+class Acidity2 extends StatefulWidget {
+  const Acidity2({super.key});
 
   @override
-  State<FeverNohead> createState() => _FeverNoheadState();
+  State<Acidity2> createState() => _Acidity2State();
 }
 
-class _FeverNoheadState extends State<FeverNohead> {
+class _Acidity2State extends State<Acidity2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,20 +34,25 @@ class _FeverNoheadState extends State<FeverNohead> {
               height: 200,
             ),
             const Text(
-              'Dolokind',
+              'Eno',
               style: TextStyle(
                   fontSize: 20,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
+            const Text(
+              '1 Sachet',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             Image.asset(
-              "assets/images/IMG_3832.JPG",
-              height: 200,
+              "assets/images/IMG_3857.JPG",
+              height: 300,
             ),
-            
           ]),
         ),
       ),

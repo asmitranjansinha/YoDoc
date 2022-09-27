@@ -1,5 +1,8 @@
+// ignore_for_file: avoid_print, duplicate_ignore
+
 import 'package:flutter/material.dart';
 import 'package:group_button/group_button.dart';
+import 'package:yodoc/routes/routes.dart';
 
 class LoosemotionPage extends StatefulWidget {
   const LoosemotionPage({super.key});
@@ -28,9 +31,9 @@ class _LoosemotionPageState extends State<LoosemotionPage> {
             const SizedBox(
               height: 150,
             ),
-            Center(
+            const Center(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 'Also happening?',
                 style: TextStyle(color: Colors.white, fontSize: 25),
@@ -46,8 +49,9 @@ class _LoosemotionPageState extends State<LoosemotionPage> {
               runSpacing: 15,
               borderRadius: BorderRadius.circular(15),
               textAlign: TextAlign.center,
-              selectedTextStyle: TextStyle(fontWeight: FontWeight.bold),
+              selectedTextStyle: const TextStyle(fontWeight: FontWeight.bold),
               controller: controller,
+              // ignore: prefer_const_literals_to_create_immutables
               buttons: [
                 'Mucoid Stool',
                 'Blood Stained',
@@ -63,7 +67,9 @@ class _LoosemotionPageState extends State<LoosemotionPage> {
             ElevatedButton(
               onPressed: () {
                 if (controller.selectedIndexes.containsAll([0, 1, 2])) {
-                  print("object");
+                  Navigator.pushNamed(context, AppRoutes.loose1Route);
+                }else if(controller.selectedIndexes.containsAll([0])) {
+                  Navigator.pushNamed(context, AppRoutes.loose2Route);
                 }
               },
               style: ElevatedButton.styleFrom(

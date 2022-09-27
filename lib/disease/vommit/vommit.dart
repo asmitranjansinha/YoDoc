@@ -28,9 +28,9 @@ class _VommitPageState extends State<VommitPage> {
               const SizedBox(
                 height: 300,
               ),
-              Center(
+              const Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Text(
                 'Feeling like vomitting or actually happening?',
                 style: TextStyle(color: Colors.white, fontSize: 25),

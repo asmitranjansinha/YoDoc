@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class FeverNohead extends StatefulWidget {
-  const FeverNohead({super.key});
+class LowerStomach extends StatefulWidget {
+  const LowerStomach({super.key});
 
   @override
-  State<FeverNohead> createState() => _FeverNoheadState();
+  State<LowerStomach> createState() => _LowerStomachState();
 }
 
-class _FeverNoheadState extends State<FeverNohead> {
+class _LowerStomachState extends State<LowerStomach> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +34,7 @@ class _FeverNoheadState extends State<FeverNohead> {
               height: 200,
             ),
             const Text(
-              'Dolokind',
+              'Anafortan - 1 Tab',
               style: TextStyle(
                   fontSize: 20,
                   color: Colors.white,
@@ -44,8 +44,8 @@ class _FeverNoheadState extends State<FeverNohead> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3832.JPG",
-              height: 200,
+              "assets/images/IMG_3860.JPG",
+              height: 300,
             ),
             
           ]),

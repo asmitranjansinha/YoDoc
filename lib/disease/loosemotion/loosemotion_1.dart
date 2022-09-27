@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class FeverHead extends StatefulWidget {
-  const FeverHead({super.key});
+class Loosemotion1 extends StatefulWidget {
+  const Loosemotion1({super.key});
 
   @override
-  State<FeverHead> createState() => _FeverHeadState();
+  State<Loosemotion1> createState() => _Loosemotion1State();
 }
 
-class _FeverHeadState extends State<FeverHead> {
+class _Loosemotion1State extends State<Loosemotion1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,51 +36,66 @@ class _FeverHeadState extends State<FeverHead> {
                 height: 30,
               ),
               const Text(
-                'Fenceta Novo',
+                'Metron',
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
+              const Text(
+                '1 Tab thrics daily',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
               const SizedBox(
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3829.JPG",
+                "assets/images/IMG_3853.JPG",
                 height: 200,
               ),
               const SizedBox(
                 height: 30,
               ),
               const Text(
-                'Zerodol P',
+                'Oflomac 200',
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
+              const Text(
+                '1 Tab 2 times daily',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
               const SizedBox(
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3830.JPG",
+                "assets/images/IMG_3854.JPG",
                 height: 200,
               ),
               const SizedBox(
                 height: 30,
               ),
               const Text(
-                'Dolokind Plus',
+                'Meftal Spas',
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
                     fontWeight: FontWeight.bold),
               ),
+              const Text(
+                '1 Tab 2 times daily',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
               const SizedBox(
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3831.JPG",
+                "assets/images/IMG_3855.JPG",
                 height: 200,
               ),
             ]),

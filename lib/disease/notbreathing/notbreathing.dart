@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:group_button/group_button.dart';
+import 'package:yodoc/routes/routes.dart';
 
-class AcidityPage extends StatefulWidget {
-  const AcidityPage({super.key});
+class NotbreathingPage extends StatefulWidget {
+  const NotbreathingPage({super.key});
 
   @override
-  State<AcidityPage> createState() => _AcidityPageState();
+  State<NotbreathingPage> createState() => _NotbreathingPageState();
 }
 
-class _AcidityPageState extends State<AcidityPage> {
-  final controller = GroupButtonController();
+class _NotbreathingPageState extends State<NotbreathingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,11 +27,11 @@ class _AcidityPageState extends State<AcidityPage> {
             const SizedBox(
               height: 300,
             ),
-            Center(
+            const Center(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: EdgeInsets.symmetric(horizontal: 25),
               child: Text(
-                'Specify your problem',
+                'Is the patient alive?',
                 style: TextStyle(color: Colors.white, fontSize: 25),
               ),
             )),
@@ -43,14 +42,16 @@ class _AcidityPageState extends State<AcidityPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.notbreathing1Route);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
                           horizontal: 30, vertical: 13),
                       shape: const StadiumBorder()),
                   child: const Text(
-                    'Happens Often',
+                    'Y E S',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black54,
@@ -61,38 +62,23 @@ class _AcidityPageState extends State<AcidityPage> {
                   height: 30,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.notbreathing2Route);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
                           horizontal: 30, vertical: 13),
                       shape: const StadiumBorder()),
                   child: const Text(
-                    'One time thing',
+                    'N O',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black54,
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 30,
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300],
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 13),
-                      shape: const StadiumBorder()),
-                  child: const Text(
-                    'Sometimes',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
-                  ),
-                ),
+                
               ],
             ),
           ],

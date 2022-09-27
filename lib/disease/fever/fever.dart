@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../routes/routes.dart';
+
 class FeverPage extends StatefulWidget {
   const FeverPage({super.key});
 
@@ -26,9 +28,9 @@ class _FeverPageState extends State<FeverPage> {
             const SizedBox(
               height: 300,
             ),
-            Center(
+            const Center(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 'Also Happening?',
                 style: TextStyle(color: Colors.white, fontSize: 25),
@@ -41,7 +43,7 @@ class _FeverPageState extends State<FeverPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushNamed(context, AppRoutes.feverheadRoute);},
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -56,7 +58,7 @@ class _FeverPageState extends State<FeverPage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushNamed(context, AppRoutes.feverheadRoute);},
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -77,7 +79,7 @@ class _FeverPageState extends State<FeverPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushNamed(context, AppRoutes.feverheadRoute);},
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -92,7 +94,7 @@ class _FeverPageState extends State<FeverPage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushNamed(context, AppRoutes.fevernoheadRoute);},
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(

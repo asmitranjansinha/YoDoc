@@ -23,7 +23,7 @@ class _Cold4State extends State<Cold4> {
             ])),
         child: SafeArea(
           child: Column(children: [
-            Text(
+            const Text(
               "Medicines :",
               style: TextStyle(
                   fontSize: 35,
@@ -33,14 +33,14 @@ class _Cold4State extends State<Cold4> {
             const SizedBox(
                 height: 30,
               ),
-              Text(
+              const Text(
                   'ZADY 500',
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                Text(
+                const Text(
                   '1 Tab daily till the cold subsides',
                   style: TextStyle(
                       color: Colors.white,
@@ -56,14 +56,14 @@ class _Cold4State extends State<Cold4> {
                 const SizedBox(
                   height: 30,
                 ),
-                Text(
+                const Text(
                   'Montemac-L',
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                Text(
+                const Text(
                 '2 times daily till the cold subsides',
                 style: TextStyle(
                     color: Colors.white,

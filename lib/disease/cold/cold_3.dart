@@ -25,7 +25,7 @@ class _Cold3State extends State<Cold3> {
               ])),
           child: SafeArea(
             child: Column(children: [
-              Text(
+              const Text(
                 "Medicines :",
                 style: TextStyle(
                     fontSize: 35,
@@ -35,14 +35,14 @@ class _Cold3State extends State<Cold3> {
               const SizedBox(
                     height: 30,
                   ),
-                  Text(
+                  const Text(
                       'ZADY 500',
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
                           fontWeight: FontWeight.bold),
                     ),
-                    Text(
+                    const Text(
                       '1 Tab daily till the cold subsides',
                       style: TextStyle(
                           color: Colors.white,
@@ -58,14 +58,14 @@ class _Cold3State extends State<Cold3> {
                     const SizedBox(
                   height: 30,
                 ),
-                Text(
+                const Text(
                   'Montemac-L',
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                Text(
+                const Text(
                   '2 times daily till the cold subsides',
                   style: TextStyle(
                       color: Colors.white,
@@ -81,14 +81,14 @@ class _Cold3State extends State<Cold3> {
                 const SizedBox(
                   height: 30,
                 ),
-                Text(
+                const Text(
                   'Benedryl',
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                Text(
+                const Text(
                   '10ml 2 times daily',
                   style: TextStyle(
                       color: Colors.white,
@@ -104,14 +104,14 @@ class _Cold3State extends State<Cold3> {
                 const SizedBox(
                   height: 30,
                 ),
-                Text(
+                const Text(
                   'Strepsils',
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                Text(
+                const Text(
                   'Optional',
                   style: TextStyle(
                       color: Colors.white,

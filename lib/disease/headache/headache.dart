@@ -28,7 +28,7 @@ class _HeadachePageState extends State<HeadachePage> {
               const SizedBox(
                 height: 300,
               ),
-              Center(
+              const Center(
                   child: Text(
                 'Are you feeling feverish?',
                 style: TextStyle(color: Colors.white, fontSize: 25),

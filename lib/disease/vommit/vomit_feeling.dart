@@ -23,7 +23,7 @@ class _VommitFeelingState extends State<VommitFeeling> {
             ])),
         child: SafeArea(
           child: Column(children: [
-            Text(
+            const Text(
               "Medicines :",
               style: TextStyle(
                   fontSize: 35,
@@ -33,7 +33,7 @@ class _VommitFeelingState extends State<VommitFeeling> {
             const SizedBox(
               height: 200,
             ),
-            Text(
+            const Text(
               'Stemetil MD',
               style: TextStyle(
                   fontSize: 20,

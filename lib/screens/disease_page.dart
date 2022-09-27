@@ -1,3 +1,5 @@
+// ignore_for_file: duplicate_import
+
 import 'package:flutter/material.dart';
 import 'package:yodoc/routes/routes.dart';
 

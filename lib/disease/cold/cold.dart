@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:group_button/group_button.dart';
 import 'package:yodoc/routes/routes.dart';
@@ -29,9 +31,9 @@ class _ColdPageState extends State<ColdPage> {
             const SizedBox(
               height: 150,
             ),
-            Center(
+            const Center(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 'Also happening?',
                 style: TextStyle(color: Colors.white, fontSize: 25),
@@ -47,8 +49,9 @@ class _ColdPageState extends State<ColdPage> {
               runSpacing: 15,
               borderRadius: BorderRadius.circular(15),
               textAlign: TextAlign.center,
-              selectedTextStyle: TextStyle(fontWeight: FontWeight.bold),
+              selectedTextStyle: const TextStyle(fontWeight: FontWeight.bold),
               controller: controller,
+              // ignore: prefer_const_literals_to_create_immutables
               buttons: [
                 'Fever',
                 'Cough',

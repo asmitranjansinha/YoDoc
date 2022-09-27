@@ -23,7 +23,7 @@ class _VommitHappeningState extends State<VommitHappening> {
             ])),
         child: SafeArea(
           child: Column(children: [
-            Text(
+            const Text(
               "Medicines :",
               style: TextStyle(
                   fontSize: 35,
@@ -33,7 +33,7 @@ class _VommitHappeningState extends State<VommitHappening> {
             const SizedBox(
               height: 200,
             ),
-            Text(
+            const Text(
               'Vomikind MD',
               style: TextStyle(
                   fontSize: 20,

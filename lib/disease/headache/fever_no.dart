@@ -23,7 +23,7 @@ class _FeverNoState extends State<FeverNo> {
             ])),
         child: SafeArea(
           child: Column(children: [
-            Text(
+            const Text(
                 "Medicines :",
                 style: TextStyle(
                     fontSize: 35,
@@ -33,7 +33,7 @@ class _FeverNoState extends State<FeverNo> {
             const SizedBox(
               height: 200,
             ),
-            Text(
+            const Text(
               'Dolokind',
               style: TextStyle(
                   fontSize: 20,

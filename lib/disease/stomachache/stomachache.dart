@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yodoc/routes/routes.dart';
 
 class StomachachePage extends StatefulWidget {
   const StomachachePage({super.key});
@@ -26,9 +27,9 @@ class _StomachachePageState extends State<StomachachePage> {
             const SizedBox(
               height: 300,
             ),
-            Center(
+            const Center(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+              padding: EdgeInsets.symmetric(horizontal: 25),
               child: Text(
                 'Which part of the stomach is affected?',
                 style: TextStyle(color: Colors.white, fontSize: 25),
@@ -41,7 +42,7 @@ class _StomachachePageState extends State<StomachachePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushNamed(context, AppRoutes.upperstRoute);},
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -59,7 +60,7 @@ class _StomachachePageState extends State<StomachachePage> {
                   height: 30,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushNamed(context, AppRoutes.lowerstRoute);},
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -77,7 +78,7 @@ class _StomachachePageState extends State<StomachachePage> {
                   height: 30,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.pushNamed(context, AppRoutes.wholestRoute);},
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
