@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../routes/routes.dart';
+
 class VommitPage extends StatefulWidget {
   const VommitPage({super.key});
 
@@ -41,7 +43,7 @@ class _VommitPageState extends State<VommitPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {Navigator.pushNamed(context, AppRoutes.vommitfeelingRoute);},
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         padding: const EdgeInsets.symmetric(
@@ -56,7 +58,7 @@ class _VommitPageState extends State<VommitPage> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {Navigator.pushNamed(context, AppRoutes.vommithappeningRoute);},
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         padding: const EdgeInsets.symmetric(

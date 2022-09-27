@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class FeverNo extends StatefulWidget {
-  const FeverNo({super.key});
+class VommitHappening extends StatefulWidget {
+  const VommitHappening({super.key});
 
   @override
-  State<FeverNo> createState() => _FeverNoState();
+  State<VommitHappening> createState() => _VommitHappeningState();
 }
 
-class _FeverNoState extends State<FeverNo> {
+class _VommitHappeningState extends State<VommitHappening> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,17 +24,17 @@ class _FeverNoState extends State<FeverNo> {
         child: SafeArea(
           child: Column(children: [
             Text(
-                "Medicines :",
-                style: TextStyle(
-                    fontSize: 35,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
+              "Medicines :",
+              style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
             const SizedBox(
               height: 200,
             ),
             Text(
-              'Dolokind',
+              'Vomikind MD',
               style: TextStyle(
                   fontSize: 20,
                   color: Colors.white,
@@ -44,10 +44,9 @@ class _FeverNoState extends State<FeverNo> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3832.JPG",
-              height: 200,
+              "assets/images/IMG_3845.PNG",
+              height: 400,
             ),
-            
           ]),
         ),
       ),

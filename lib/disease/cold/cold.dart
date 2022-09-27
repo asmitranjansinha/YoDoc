@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:group_button/group_button.dart';
+import 'package:yodoc/routes/routes.dart';
 
 class ColdPage extends StatefulWidget {
   const ColdPage({super.key});
@@ -64,8 +65,14 @@ class _ColdPageState extends State<ColdPage> {
             ),
             ElevatedButton(
               onPressed: () {
-                if (controller.selectedIndexes.containsAll([0, 1, 2])) {
-                  print("object");
+                if (controller.selectedIndexes.containsAll([0, 1, 2, 3, 4])) {
+                  Navigator.pushNamed(context, AppRoutes.cold1Route);
+                }else if (controller.selectedIndexes.containsAll([0, 2])) {
+                  Navigator.pushNamed(context, AppRoutes.cold2Route);
+                }else if (controller.selectedIndexes.containsAll([1, 2, 3, 4])) {
+                  Navigator.pushNamed(context, AppRoutes.cold3Route);
+                }else if (controller.selectedIndexes.containsAll([2])) {
+                  Navigator.pushNamed(context, AppRoutes.cold4Route);
                 }
               },
               style: ElevatedButton.styleFrom(
