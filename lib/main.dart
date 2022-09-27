@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yodoc/disease/acidity.dart';
+import 'package:yodoc/disease/headache/fever_no.dart';
+import 'package:yodoc/disease/headache/fever_yes.dart';
 import 'package:yodoc/routes/routes.dart';
 import 'package:yodoc/screens/disease_page.dart';
 import 'package:yodoc/screens/home_page.dart';
@@ -38,6 +40,8 @@ class MyApp extends StatelessWidget {
         AppRoutes.notbreathingRoute:(context) => const NotbreathingPage(),
         AppRoutes.stomachacheRoute:(context) => const StomachachePage(),
         AppRoutes.vommitRoute:(context) => const VommitPage(),
+        AppRoutes.headachefeveryesRoute:(context) => const FeverYes(),
+        AppRoutes.headachefevernoRoute:(context) => const FeverNo(),
       }
     );
   }

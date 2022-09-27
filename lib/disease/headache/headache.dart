@@ -39,6 +39,7 @@ class _HeadachePageState extends State<HeadachePage> {
                 children: [
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, AppRoutes.headachefeveryesRoute);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
@@ -55,6 +56,7 @@ class _HeadachePageState extends State<HeadachePage> {
                   ),
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, AppRoutes.headachefeveryesRoute);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],

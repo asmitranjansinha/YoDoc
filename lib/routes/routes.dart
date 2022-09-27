@@ -9,4 +9,6 @@ class AppRoutes{
   static String stomachacheRoute = '/stomachache';
   static String acidityRoute = '/acidity';
   static String notbreathingRoute = '/notbreathing';
+  static String headachefeveryesRoute = '/feveryes';
+  static String headachefevernoRoute = '/feverno';
 }
