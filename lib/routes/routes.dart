@@ -8,7 +8,5 @@ class AppRoutes{
   static String loosemotionRoute = '/loosemotion';
   static String stomachacheRoute = '/stomachache';
   static String acidityRoute = '/acidity';
-  static String convulsionsRoute = '/convulsions';
-  static String breathlessnessRoute = '/breathlessness';
   static String notbreathingRoute = '/notbreathing';
 }

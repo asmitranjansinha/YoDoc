@@ -148,6 +148,9 @@ class _DiseasePageState extends State<DiseasePage> {
                         color: Colors.grey[300]?.withOpacity(0.7),
                         borderRadius: BorderRadius.circular(15),
                         child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, AppRoutes.loosemotionRoute);
+                          },
                           child: Container(
                             width: 200,
                             height: 150,
@@ -167,6 +170,9 @@ class _DiseasePageState extends State<DiseasePage> {
                         color: Colors.grey[300]?.withOpacity(0.7),
                         borderRadius: BorderRadius.circular(15),
                         child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, AppRoutes.stomachacheRoute);
+                          },
                           child: Container(
                             width: 200,
                             height: 150,
@@ -193,6 +199,9 @@ class _DiseasePageState extends State<DiseasePage> {
                         color: Colors.grey[300]?.withOpacity(0.7),
                         borderRadius: BorderRadius.circular(15),
                         child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, AppRoutes.acidityRoute);
+                          },
                           child: Container(
                             width: 200,
                             height: 150,
@@ -208,55 +217,16 @@ class _DiseasePageState extends State<DiseasePage> {
                           ),
                         ),
                       ),
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
-                          child: Container(
-                            width: 200,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Convulsions",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ]),
                 const SizedBox(
                   height: 80,
                 ),
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
                       Material(
                         color: Colors.grey[300]?.withOpacity(0.7),
                         borderRadius: BorderRadius.circular(15),
                         child: InkWell(
-                          child: Container(
-                            width: 200,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Breathlessness",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(context, AppRoutes.notbreathingRoute);
+                          },
                           child: Container(
                             width: 200,
                             height: 150,

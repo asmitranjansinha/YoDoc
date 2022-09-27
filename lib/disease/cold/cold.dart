@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group_button/group_button.dart';
 
 class ColdPage extends StatefulWidget {
   const ColdPage({super.key});
@@ -8,6 +9,7 @@ class ColdPage extends StatefulWidget {
 }
 
 class _ColdPageState extends State<ColdPage> {
+  final controller = GroupButtonController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,151 +26,60 @@ class _ColdPageState extends State<ColdPage> {
         child: Column(
           children: [
             const SizedBox(
-              height: 80,
+              height: 150,
             ),
             Center(
                 child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Text(
-                'Are you feeling feverish?',
+                'Also happening?',
                 style: TextStyle(color: Colors.white, fontSize: 25),
               ),
             )),
             const SizedBox(
               height: 35,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300],
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 13),
-                      shape: const StadiumBorder()),
-                  child: const Text(
-                    'Y E S',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300],
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 13),
-                      shape: const StadiumBorder()),
-                  child: const Text(
-                    'N O',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
-                  ),
-                ),
+            GroupButton.checkbox(
+              buttonHeight: 60,
+              buttonWidth: 100,
+              spacing: 450,
+              runSpacing: 15,
+              borderRadius: BorderRadius.circular(15),
+              textAlign: TextAlign.center,
+              selectedTextStyle: TextStyle(fontWeight: FontWeight.bold),
+              controller: controller,
+              buttons: [
+                'Fever',
+                'Cough',
+                'Nose Blowing',
+                'Throat Irritation',
+                'Dry Cough'
               ],
+              onSelected: (i, selected) {
+                print(controller.selectedIndexes);
+              },
             ),
             const SizedBox(
-              height: 105,
+              height: 40,
             ),
-            Center(
-                child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: Text(
-                'Are you Coughing?',
-                style: TextStyle(color: Colors.white, fontSize: 25),
+            ElevatedButton(
+              onPressed: () {
+                if (controller.selectedIndexes.containsAll([0, 1, 2])) {
+                  print("object");
+                }
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey[300],
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 13),
+                  shape: const StadiumBorder()),
+              child: const Text(
+                'N E X T',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black54,
+                ),
               ),
-            )),
-            const SizedBox(
-              height: 35,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300],
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 13),
-                      shape: const StadiumBorder()),
-                  child: const Text(
-                    'Y E S',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300],
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 13),
-                      shape: const StadiumBorder()),
-                  child: const Text(
-                    'N O',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 105,
-            ),
-            Center(
-                child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: Text(
-                'Is your nose blowing?',
-                style: TextStyle(color: Colors.white, fontSize: 25),
-              ),
-            )),
-            const SizedBox(
-              height: 35,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300],
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 13),
-                      shape: const StadiumBorder()),
-                  child: const Text(
-                    'Y E S',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey[300],
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 13),
-                      shape: const StadiumBorder()),
-                  child: const Text(
-                    'N O',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
-                  ),
-                ),
-              ],
             ),
           ],
         ),
