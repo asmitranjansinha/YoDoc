@@ -52,7 +52,7 @@ class _DiseasePageState extends State<DiseasePage> {
                                 context, AppRoutes.headacheRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
@@ -74,7 +74,7 @@ class _DiseasePageState extends State<DiseasePage> {
                             Navigator.pushNamed(context, AppRoutes.vommitRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
@@ -103,7 +103,7 @@ class _DiseasePageState extends State<DiseasePage> {
                             Navigator.pushNamed(context, AppRoutes.coldRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
@@ -125,7 +125,7 @@ class _DiseasePageState extends State<DiseasePage> {
                             Navigator.pushNamed(context, AppRoutes.feverRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
@@ -154,7 +154,7 @@ class _DiseasePageState extends State<DiseasePage> {
                             Navigator.pushNamed(context, AppRoutes.loosemotionRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
@@ -176,7 +176,7 @@ class _DiseasePageState extends State<DiseasePage> {
                             Navigator.pushNamed(context, AppRoutes.stomachacheRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
@@ -205,7 +205,7 @@ class _DiseasePageState extends State<DiseasePage> {
                             Navigator.pushNamed(context, AppRoutes.acidityRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
@@ -230,7 +230,7 @@ class _DiseasePageState extends State<DiseasePage> {
                             Navigator.pushNamed(context, AppRoutes.notbreathingRoute);
                           },
                           child: Container(
-                            width: 200,
+                            width: 150,
                             height: 150,
                             alignment: Alignment.center,
                             child: const Text(
