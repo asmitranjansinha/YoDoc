@@ -37,8 +37,8 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(
                     height: 30,
                   ),
-                  Lottie.network(
-                      "https://assets10.lottiefiles.com/packages/lf20_l13zwx3i.json",
+                  Lottie.asset(
+                      "assets/images/47137-doctor-and-health-symbols.json",
                       fit: BoxFit.contain),
                   const SizedBox(
                     height: 60,
