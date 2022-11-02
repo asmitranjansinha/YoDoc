@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:yodoc/widgets/inputfield.dart';
 
 import '../routes/routes.dart';
 
@@ -66,64 +67,13 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(
                       height: 70,
                     ),
-                    SizedBox(
-                      width: 300,
-                      child: TextFormField(
-                        style: const TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.bold),
-                        decoration: InputDecoration(
-                            hintText: "Name",
-                            hintStyle: const TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold),
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10),
-                                borderSide: BorderSide.none),
-                            filled: true,
-                            fillColor: Colors.white54),
-                        validator: (value) {
-                          if (value!.isEmpty) {
-                            return "Name cannot be empty";
-                          }
-                          return null;
-                        },
-                        onChanged: (value) {
-                          name = value;
-                          setState(() {});
-                        },
-                      ),
-                    ),
+                    const InputField(
+                        keyboardType: TextInputType.name, hintxt: "Name"),
                     const SizedBox(
                       height: 30,
                     ),
-                    SizedBox(
-                      width: 300,
-                      child: TextFormField(
-                        keyboardType: TextInputType.number,
-                        style: const TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.bold),
-                        decoration: InputDecoration(
-                            hintText: "Age",
-                            hintStyle: const TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold),
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10),
-                                borderSide: BorderSide.none),
-                            filled: true,
-                            fillColor: Colors.white54),
-                        validator: (value) {
-                          if (value!.isEmpty) {
-                            return "Age cannot be empty";
-                          }
-                          return null;
-                        },
-                        onChanged: (value) {
-                          name = value;
-                          setState(() {});
-                        },
-                      ),
-                    ),
+                    const InputField(
+                        keyboardType: TextInputType.number, hintxt: "Age"),
                     const SizedBox(
                       height: 30,
                     ),
