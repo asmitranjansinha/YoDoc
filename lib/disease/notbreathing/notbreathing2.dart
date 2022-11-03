@@ -27,7 +27,7 @@ class _Notbreathing2State extends State<Notbreathing2> {
               height: 400,
             ),
             Text(
-              'Lets hold a moment of silent',
+              'Lets hold a moment of silence.',
               style: TextStyle(
                   fontSize: 25,
                   color: Colors.white,

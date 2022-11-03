@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:yodoc/routes/routes.dart';
+import 'package:yodoc/widgets/disease_button.dart';
 
 import '../routes/routes.dart';
 
@@ -44,51 +45,17 @@ class _DiseasePageState extends State<DiseasePage> {
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                      DiseaseButton(
                           onTap: () {
                             Navigator.pushNamed(
                                 context, AppRoutes.headacheRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "HeadAche",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                          title: "Headache"),
+                      DiseaseButton(
                           onTap: () {
                             Navigator.pushNamed(context, AppRoutes.vommitRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Vommit",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+                          title: "Vommit")
                     ]),
                 const SizedBox(
                   height: 80,
@@ -96,50 +63,16 @@ class _DiseasePageState extends State<DiseasePage> {
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                      DiseaseButton(
                           onTap: () {
                             Navigator.pushNamed(context, AppRoutes.coldRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Cold",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                          title: "Cold"),
+                      DiseaseButton(
                           onTap: () {
                             Navigator.pushNamed(context, AppRoutes.feverRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Fever",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+                          title: "Fever")
                     ]),
                 const SizedBox(
                   height: 80,
@@ -147,50 +80,18 @@ class _DiseasePageState extends State<DiseasePage> {
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                      DiseaseButton(
                           onTap: () {
-                            Navigator.pushNamed(context, AppRoutes.loosemotionRoute);
+                            Navigator.pushNamed(
+                                context, AppRoutes.loosemotionRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Loose Motion",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                          title: "Loose Motion"),
+                      DiseaseButton(
                           onTap: () {
-                            Navigator.pushNamed(context, AppRoutes.stomachacheRoute);
+                            Navigator.pushNamed(
+                                context, AppRoutes.stomachacheRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Stomach Ache",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+                          title: "Stomach Ache")
                     ]),
                 const SizedBox(
                   height: 80,
@@ -198,53 +99,21 @@ class _DiseasePageState extends State<DiseasePage> {
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                      DiseaseButton(
                           onTap: () {
-                            Navigator.pushNamed(context, AppRoutes.acidityRoute);
+                            Navigator.pushNamed(
+                                context, AppRoutes.acidityRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Acidity",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
+                          title: "Acidity"),
+                      const SizedBox(
+                        height: 80,
                       ),
-                const SizedBox(
-                  height: 80,
-                ),
-                      Material(
-                        color: Colors.grey[300]?.withOpacity(0.7),
-                        borderRadius: BorderRadius.circular(15),
-                        child: InkWell(
+                      DiseaseButton(
                           onTap: () {
-                            Navigator.pushNamed(context, AppRoutes.notbreathingRoute);
+                            Navigator.pushNamed(
+                                context, AppRoutes.notbreathingRoute);
                           },
-                          child: Container(
-                            width: 150,
-                            height: 150,
-                            alignment: Alignment.center,
-                            child: const Text(
-                              "Not Breathing",
-                              style: TextStyle(
-                                color: Colors.black54,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+                          title: "Not Breathing")
                     ]),
               ],
             ),
