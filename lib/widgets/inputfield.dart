@@ -14,7 +14,7 @@ class InputField extends StatelessWidget {
       width: 300,
       child: TextFormField(
         keyboardType: keyboardType,
-        style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+        style: const TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),
         decoration: InputDecoration(
             hintText: hintxt,
             hintStyle:
@@ -26,7 +26,7 @@ class InputField extends StatelessWidget {
             fillColor: Colors.white54),
         validator: (value) {
           if (value!.isEmpty) {
-            return "$hintxt  cannot be empty";
+            return "$hintxt cannot be empty";
           }
           return null;
         },
