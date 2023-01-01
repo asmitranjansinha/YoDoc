@@ -16,11 +16,12 @@ class DiseasePage extends StatefulWidget {
 class _DiseasePageState extends State<DiseasePage> {
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-        physics: const AlwaysScrollableScrollPhysics(),
+        physics: AlwaysScrollableScrollPhysics(),
         child: Container(
-          width: MediaQuery.of(context).size.width,
+          width: size.width,
           decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topCenter,
@@ -32,15 +33,15 @@ class _DiseasePageState extends State<DiseasePage> {
           child: SafeArea(
             child: Column(
               children: [
-                const SizedBox(
-                  height: 40,
+                SizedBox(
+                  height: size.height / 30,
                 ),
                 const Text(
                   'What is your problem?',
                   style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
-                const SizedBox(
-                  height: 70,
+                SizedBox(
+                  height: size.height / 15,
                 ),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -57,8 +58,8 @@ class _DiseasePageState extends State<DiseasePage> {
                           },
                           title: "Vommit")
                     ]),
-                const SizedBox(
-                  height: 80,
+                SizedBox(
+                  height: size.height / 15,
                 ),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -74,8 +75,8 @@ class _DiseasePageState extends State<DiseasePage> {
                           },
                           title: "Fever")
                     ]),
-                const SizedBox(
-                  height: 80,
+                SizedBox(
+                  height: size.height / 15,
                 ),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -93,8 +94,8 @@ class _DiseasePageState extends State<DiseasePage> {
                           },
                           title: "Stomach Ache")
                     ]),
-                const SizedBox(
-                  height: 80,
+                SizedBox(
+                  height: size.height / 15,
                 ),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -115,6 +116,9 @@ class _DiseasePageState extends State<DiseasePage> {
                           },
                           title: "Not Breathing")
                     ]),
+                SizedBox(
+                  height: size.height / 15,
+                ),
               ],
             ),
           ),
