@@ -22,18 +22,20 @@ class _Notbreathing2State extends State<Notbreathing2> {
               Color(0xFFb2d8d8),
             ])),
         child: SafeArea(
-          child: Column(children: const [
-            SizedBox(
-              height: 400,
-            ),
-            Text(
-              'Lets hold a moment of silence.',
-              style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
-            ),
-          ]),
+          child: Center(
+            child: Column(children: const [
+              SizedBox(
+                height: 400,
+              ),
+              Text(
+                'Lets hold a moment of silence.',
+                style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+            ]),
+          ),
         ),
       ),
     );
