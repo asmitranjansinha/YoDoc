@@ -33,74 +33,71 @@ class _Cold2State extends State<Cold2> {
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                  height: 30,
-                ),
-                const Text(
-                    'ZADY 500',
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  const Text(
-                    '1 Tab daily till the cold subsides',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Image.asset(
-                    "assets/images/IMG_3848.PNG",
-                    height: 200,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  const Text(
-                    'Fenceta Novo',
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  const Text(
-                    '1 Tab when you feel feverish',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  Image.asset(
-                    "assets/images/IMG_3829.JPG",
-                    height: 200,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  const Text(
-                    'Montemac-L',
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  const Text(
-                  '2 times daily till the cold subsides',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Image.asset(
-                  "assets/images/IMG_3852.PNG",
-                  height: 300,
-                ),
+                height: 30,
+              ),
+              const Text(
+                'ZADY 500',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              const Text(
+                '1 Tab daily till the cold subsides',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                "assets/images/IMG_3848.png",
+                height: 200,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'Fenceta Novo',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              const Text(
+                '1 Tab when you feel feverish',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                "assets/images/IMG_3829.png",
+                height: 200,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'Montemac-L',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              const Text(
+                '2 times daily till the cold subsides',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                "assets/images/IMG_3852.png",
+                height: 300,
+              ),
             ]),
           ),
         ),

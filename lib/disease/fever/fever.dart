@@ -43,7 +43,9 @@ class _FeverPageState extends State<FeverPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, AppRoutes.feverheadRoute);},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.feverheadRoute);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -58,7 +60,9 @@ class _FeverPageState extends State<FeverPage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, AppRoutes.feverheadRoute);},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.feverheadRoute);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -74,12 +78,16 @@ class _FeverPageState extends State<FeverPage> {
                 ),
               ],
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, AppRoutes.feverheadRoute);},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.feverheadRoute);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -94,7 +102,9 @@ class _FeverPageState extends State<FeverPage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, AppRoutes.fevernoheadRoute);},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.fevernoheadRoute);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(

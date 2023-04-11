@@ -46,7 +46,7 @@ class _FeverYesState extends State<FeverYes> {
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3829.JPG",
+                "assets/images/IMG_3829.png",
                 height: 200,
               ),
               const SizedBox(
@@ -63,7 +63,7 @@ class _FeverYesState extends State<FeverYes> {
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3830.JPG",
+                "assets/images/IMG_3830.png",
                 height: 200,
               ),
               const SizedBox(
@@ -80,7 +80,7 @@ class _FeverYesState extends State<FeverYes> {
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3831.JPG",
+                "assets/images/IMG_3831.png",
                 height: 200,
               ),
             ]),

@@ -44,7 +44,7 @@ class _VommitFeelingState extends State<VommitFeeling> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3846.JPG",
+              "assets/images/IMG_3846.png",
               height: 200,
             ),
           ]),

@@ -44,7 +44,7 @@ class _UpperStomachState extends State<UpperStomach> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3858.jpg",
+              "assets/images/IMG_3858.png",
               height: 200,
             ),
           ]),

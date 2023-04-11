@@ -44,7 +44,7 @@ class _VommitHappeningState extends State<VommitHappening> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3845.PNG",
+              "assets/images/IMG_3845.png",
               height: 400,
             ),
           ]),
