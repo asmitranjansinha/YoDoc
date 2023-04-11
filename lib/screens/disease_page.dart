@@ -106,9 +106,6 @@ class _DiseasePageState extends State<DiseasePage> {
                                 context, AppRoutes.acidityRoute);
                           },
                           title: "Acidity"),
-                      const SizedBox(
-                        height: 80,
-                      ),
                       DiseaseButton(
                           onTap: () {
                             Navigator.pushNamed(
