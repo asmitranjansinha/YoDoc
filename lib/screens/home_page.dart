@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                       height: 60,
                     ),
                     const Text(
-                      'Doc24',
+                      'YoDoc',
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
