@@ -18,8 +18,8 @@ class _Notbreathing2State extends State<Notbreathing2> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-              Color(0xFF008080),
-              Color(0xFFb2d8d8),
+              Color.fromRGBO(6, 190, 182, 1),
+              Color.fromRGBO(72, 177, 191, 1),
             ])),
         child: SafeArea(
           child: Center(
@@ -28,7 +28,7 @@ class _Notbreathing2State extends State<Notbreathing2> {
                 height: 400,
               ),
               Text(
-                'Lets hold a moment of silence.',
+                'Lets hold a moment of silence',
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.white,

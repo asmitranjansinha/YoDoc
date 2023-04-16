@@ -18,18 +18,18 @@ class _UpperStomachState extends State<UpperStomach> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-              Color(0xFF008080),
-              Color(0xFFb2d8d8),
+              Color.fromRGBO(6, 190, 182, 1),
+              Color.fromRGBO(72, 177, 191, 1),
             ])),
         child: SafeArea(
           child: Column(children: [
             const Text(
-                "Medicines :",
-                style: TextStyle(
-                    fontSize: 35,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
+              "Medicines :",
+              style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
             const SizedBox(
               height: 200,
             ),

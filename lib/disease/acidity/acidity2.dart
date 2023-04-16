@@ -18,8 +18,8 @@ class _Acidity2State extends State<Acidity2> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-              Color(0xFF008080),
-              Color(0xFFb2d8d8),
+              Color.fromRGBO(6, 190, 182, 1),
+              Color.fromRGBO(72, 177, 191, 1),
             ])),
         child: SafeArea(
           child: Column(children: [
@@ -41,7 +41,7 @@ class _Acidity2State extends State<Acidity2> {
                   fontWeight: FontWeight.bold),
             ),
             const Text(
-              '1 Sachet',
+              '1 Pack',
               style:
                   TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),

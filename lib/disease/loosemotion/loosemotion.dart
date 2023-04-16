@@ -22,8 +22,8 @@ class _LoosemotionPageState extends State<LoosemotionPage> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-            Color(0xFF008080),
-            Color(0xFFb2d8d8),
+            Color.fromRGBO(6, 190, 182, 1),
+            Color.fromRGBO(72, 177, 191, 1),
           ])),
       child: SafeArea(
         child: Column(
@@ -52,11 +52,7 @@ class _LoosemotionPageState extends State<LoosemotionPage> {
               selectedTextStyle: const TextStyle(fontWeight: FontWeight.bold),
               controller: controller,
               // ignore: prefer_const_literals_to_create_immutables
-              buttons: [
-                'Mucoid Stool',
-                'Blood Stained',
-                'Stomach Ache'
-              ],
+              buttons: ['Mucoid Stool', 'Blood Stained', 'Stomach Ache'],
               onSelected: (i, selected) {
                 print(controller.selectedIndexes);
               },
@@ -68,7 +64,7 @@ class _LoosemotionPageState extends State<LoosemotionPage> {
               onPressed: () {
                 if (controller.selectedIndexes.containsAll([0, 1, 2])) {
                   Navigator.pushNamed(context, AppRoutes.loose1Route);
-                }else if(controller.selectedIndexes.containsAll([0])) {
+                } else if (controller.selectedIndexes.containsAll([0])) {
                   Navigator.pushNamed(context, AppRoutes.loose2Route);
                 }
               },

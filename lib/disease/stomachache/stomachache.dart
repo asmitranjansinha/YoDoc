@@ -18,8 +18,8 @@ class _StomachachePageState extends State<StomachachePage> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-            Color(0xFF008080),
-            Color(0xFFb2d8d8),
+            Color.fromRGBO(6, 190, 182, 1),
+            Color.fromRGBO(72, 177, 191, 1),
           ])),
       child: SafeArea(
         child: Column(
@@ -42,7 +42,9 @@ class _StomachachePageState extends State<StomachachePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, AppRoutes.upperstRoute);},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.upperstRoute);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -60,7 +62,9 @@ class _StomachachePageState extends State<StomachachePage> {
                   height: 30,
                 ),
                 ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, AppRoutes.lowerstRoute);},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.lowerstRoute);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
@@ -78,7 +82,9 @@ class _StomachachePageState extends State<StomachachePage> {
                   height: 30,
                 ),
                 ElevatedButton(
-                  onPressed: () {Navigator.pushNamed(context, AppRoutes.wholestRoute);},
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.wholestRoute);
+                  },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.grey[300],
                       padding: const EdgeInsets.symmetric(
