@@ -43,4 +43,4 @@ I welcome contributions from the community! If you'd like to contribute to YoDoc
 
 If you have any questions, suggestions, or feedback, please feel free to contact me at shenmareparas@gmail.com or create an issue in the repository. I'd love to hear from you!
 
-Enjoy YoDoc!
+##Enjoy YoDoc!
