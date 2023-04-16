@@ -22,14 +22,16 @@ class InputField extends StatelessWidget {
         style:
             const TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),
         decoration: InputDecoration(
-            hintText: hintxt,
-            hintStyle: const TextStyle(
-                color: Colors.grey, fontWeight: FontWeight.bold),
-            border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(3),
-                borderSide: BorderSide.none),
-            filled: true,
-            fillColor: Colors.white54),
+          hintText: hintxt,
+          hintStyle:
+              const TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(3),
+              borderSide: BorderSide.none),
+          filled: true,
+          fillColor: Colors.white54,
+          counterText: "",
+        ),
         validator: (value) {
           if (value!.isEmpty) {
             return "$hintxt cannot be empty";

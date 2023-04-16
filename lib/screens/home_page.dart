@@ -61,14 +61,14 @@ class _HomePageState extends State<HomePage> {
                           fontSize: 50),
                     ),
                     const Text(
-                      'your problem is our problem',
+                      'Healthcare Anytime, Anywhere',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     const SizedBox(
                       height: 70,
                     ),
                     const InputField(
-                        maxLength: null,
+                        maxLength: 40,
                         keyboardType: TextInputType.name,
                         hintxt: "Name"),
                     const SizedBox(
