@@ -30,12 +30,12 @@ class _VommitPageState extends State<VommitPage> {
               ),
               const Center(
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 12),
-                    child: Text(
-                'Feeling like vomitting or actually happening?',
-                style: TextStyle(color: Colors.white, fontSize: 25),
-              ),
-                  )),
+                padding: EdgeInsets.symmetric(horizontal: 12),
+                child: Text(
+                  'Feeling like vomitting or actually happening?',
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+              )),
               const SizedBox(
                 height: 35,
               ),
@@ -43,7 +43,10 @@ class _VommitPageState extends State<VommitPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
-                    onPressed: () {Navigator.pushNamed(context, AppRoutes.vommitfeelingRoute);},
+                    onPressed: () {
+                      Navigator.pushNamed(
+                          context, AppRoutes.vommitfeelingRoute);
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         padding: const EdgeInsets.symmetric(
@@ -58,7 +61,10 @@ class _VommitPageState extends State<VommitPage> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {Navigator.pushNamed(context, AppRoutes.vommithappeningRoute);},
+                    onPressed: () {
+                      Navigator.pushNamed(
+                          context, AppRoutes.vommithappeningRoute);
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         padding: const EdgeInsets.symmetric(

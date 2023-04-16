@@ -33,97 +33,93 @@ class _Cold3State extends State<Cold3> {
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                    height: 30,
-                  ),
-                  const Text(
-                      'ZADY 500',
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    const Text(
-                      '1 Tab daily till the cold subsides',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset(
-                      "assets/images/IMG_3848.PNG",
-                      height: 200,
-                    ),
-                    const SizedBox(
-                  height: 30,
-                ),
-                const Text(
-                  'Montemac-L',
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
-                ),
-                const Text(
-                  '2 times daily till the cold subsides',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Image.asset(
-                  "assets/images/IMG_3852.PNG",
-                  height: 300,
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                const Text(
-                  'Benedryl',
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
-                ),
-                const Text(
-                  '10ml 2 times daily',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Image.asset(
-                  "assets/images/IMG_3850.JPG",
-                  height: 300,
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                const Text(
-                  'Strepsils',
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
-                ),
-                const Text(
-                  'Optional',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Image.asset(
-                  "assets/images/IMG_3851.JPG",
-                  height: 200,
-                ),
+                height: 30,
+              ),
+              const Text(
+                'ZADY 500',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              const Text(
+                '1 Tab daily till the cold subsides',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                "assets/images/IMG_3848.png",
+                height: 200,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'Montemac-L',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              const Text(
+                '2 times daily till the cold subsides',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                "assets/images/IMG_3852.png",
+                height: 300,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'Benedryl',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              const Text(
+                '10ml 2 times daily',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                "assets/images/IMG_3850.png",
+                height: 300,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'Strepsils',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
+              const Text(
+                'Optional',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                "assets/images/IMG_3851.png",
+                height: 200,
+              ),
             ]),
           ),
         ),

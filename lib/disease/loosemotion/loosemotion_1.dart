@@ -51,7 +51,7 @@ class _Loosemotion1State extends State<Loosemotion1> {
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3853.JPG",
+                "assets/images/IMG_3853.png",
                 height: 200,
               ),
               const SizedBox(
@@ -73,7 +73,7 @@ class _Loosemotion1State extends State<Loosemotion1> {
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3854.JPG",
+                "assets/images/IMG_3854.png",
                 height: 200,
               ),
               const SizedBox(
@@ -95,7 +95,7 @@ class _Loosemotion1State extends State<Loosemotion1> {
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3855.JPG",
+                "assets/images/IMG_3855.png",
                 height: 200,
               ),
             ]),

@@ -70,11 +70,12 @@ class _ColdPageState extends State<ColdPage> {
               onPressed: () {
                 if (controller.selectedIndexes.containsAll([0, 1, 2, 3, 4])) {
                   Navigator.pushNamed(context, AppRoutes.cold1Route);
-                }else if (controller.selectedIndexes.containsAll([0, 2])) {
+                } else if (controller.selectedIndexes.containsAll([0, 2])) {
                   Navigator.pushNamed(context, AppRoutes.cold2Route);
-                }else if (controller.selectedIndexes.containsAll([1, 2, 3, 4])) {
+                } else if (controller.selectedIndexes
+                    .containsAll([1, 2, 3, 4])) {
                   Navigator.pushNamed(context, AppRoutes.cold3Route);
-                }else if (controller.selectedIndexes.containsAll([2])) {
+                } else if (controller.selectedIndexes.containsAll([2])) {
                   Navigator.pushNamed(context, AppRoutes.cold4Route);
                 }
               },

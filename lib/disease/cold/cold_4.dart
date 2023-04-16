@@ -50,7 +50,7 @@ class _Cold4State extends State<Cold4> {
                   height: 10,
                 ),
                 Image.asset(
-                  "assets/images/IMG_3848.PNG",
+                  "assets/images/IMG_3848.png",
                   height: 200,
                 ),
                 const SizedBox(
@@ -73,7 +73,7 @@ class _Cold4State extends State<Cold4> {
                 height: 10,
               ),
               Image.asset(
-                "assets/images/IMG_3852.PNG",
+                "assets/images/IMG_3852.png",
                 height: 300,
               ),
           ]),

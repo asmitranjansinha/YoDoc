@@ -24,12 +24,12 @@ class _WholeStomachState extends State<WholeStomach> {
         child: SafeArea(
           child: Column(children: [
             const Text(
-                "Medicines :",
-                style: TextStyle(
-                    fontSize: 35,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
+              "Medicines :",
+              style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
             const SizedBox(
               height: 200,
             ),
@@ -44,10 +44,9 @@ class _WholeStomachState extends State<WholeStomach> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3861.PNG",
+              "assets/images/IMG_3861.png",
               height: 300,
             ),
-            
           ]),
         ),
       ),

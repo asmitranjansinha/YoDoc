@@ -19,7 +19,7 @@ class _DiseasePageState extends State<DiseasePage> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-        physics: AlwaysScrollableScrollPhysics(),
+        physics: const AlwaysScrollableScrollPhysics(),
         child: Container(
           width: size.width,
           decoration: const BoxDecoration(
@@ -106,9 +106,6 @@ class _DiseasePageState extends State<DiseasePage> {
                                 context, AppRoutes.acidityRoute);
                           },
                           title: "Acidity"),
-                      const SizedBox(
-                        height: 80,
-                      ),
                       DiseaseButton(
                           onTap: () {
                             Navigator.pushNamed(

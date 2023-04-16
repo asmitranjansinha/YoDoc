@@ -49,7 +49,7 @@ class _Loosemotion2State extends State<Loosemotion2> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3853.JPG",
+              "assets/images/IMG_3853.png",
               height: 200,
             ),
           ]),

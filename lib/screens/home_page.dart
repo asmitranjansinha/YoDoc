@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                       height: 60,
                     ),
                     const Text(
-                      'Doc24',
+                      'YoDoc',
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -68,12 +68,16 @@ class _HomePageState extends State<HomePage> {
                       height: 70,
                     ),
                     const InputField(
-                        keyboardType: TextInputType.name, hintxt: "Name"),
+                        maxLength: null,
+                        keyboardType: TextInputType.name,
+                        hintxt: "Name"),
                     const SizedBox(
                       height: 30,
                     ),
                     const InputField(
-                        keyboardType: TextInputType.number, hintxt: "Age"),
+                        maxLength: 2,
+                        keyboardType: TextInputType.number,
+                        hintxt: "Age"),
                     const SizedBox(
                       height: 30,
                     ),

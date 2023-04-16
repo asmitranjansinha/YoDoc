@@ -44,7 +44,7 @@ class _FeverNoState extends State<FeverNo> {
               height: 10,
             ),
             Image.asset(
-              "assets/images/IMG_3832.JPG",
+              "assets/images/IMG_3832.png",
               height: 200,
             ),
             

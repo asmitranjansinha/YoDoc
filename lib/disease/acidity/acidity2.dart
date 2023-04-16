@@ -24,12 +24,12 @@ class _Acidity2State extends State<Acidity2> {
         child: SafeArea(
           child: Column(children: [
             const Text(
-                "Medicines :",
-                style: TextStyle(
-                    fontSize: 35,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
+              "Medicines :",
+              style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
             const SizedBox(
               height: 200,
             ),
@@ -42,15 +42,14 @@ class _Acidity2State extends State<Acidity2> {
             ),
             const Text(
               '1 Sachet',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
             const SizedBox(
               height: 20,
             ),
             Image.asset(
-              "assets/images/IMG_3857.JPG",
+              "assets/images/IMG_3857.png",
               height: 300,
             ),
           ]),
