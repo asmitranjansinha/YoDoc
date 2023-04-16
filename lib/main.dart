@@ -23,7 +23,6 @@ import 'package:yodoc/disease/vommit/vomit_happening.dart';
 import 'package:yodoc/routes/routes.dart';
 import 'package:yodoc/screens/disease_page.dart';
 import 'package:yodoc/screens/home_page.dart';
-
 import 'disease/cold/cold.dart';
 import 'disease/fever/fever.dart';
 import 'disease/headache/headache.dart';
