@@ -26,13 +26,13 @@ To get started with YoDoc, follow these steps:
 git clone https://github.com/username/repo.git
 
 2. Install the dependencies for the app.
-
+```bash
 flutter pub get
-
+```
 3. Start the app.
-
+```bash
 flutter run
-
+```
 4. Open the YoDoc app on your emulator or device.
 
 ## Contributing
