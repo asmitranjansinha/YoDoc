@@ -22,9 +22,9 @@ YoDoc is a virtual doctor app built using Flutter and Dart that allows users to 
 To get started with YoDoc, follow these steps:
 
 1. Clone the repository to your local machine.
-
+```bash
 git clone https://github.com/username/repo.git
-
+```
 2. Install the dependencies for the app.
 ```bash
 flutter pub get
